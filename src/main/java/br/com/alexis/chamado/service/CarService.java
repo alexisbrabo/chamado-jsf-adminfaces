@@ -2,12 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.adminfaces.starter.service;
+package br.com.alexis.chamado.service;
 
-import com.github.adminfaces.starter.infra.model.Filter;
-import com.github.adminfaces.starter.infra.model.SortOrder;
-import com.github.adminfaces.starter.model.Car;
 import com.github.adminfaces.template.exception.BusinessException;
+
+import br.com.alexis.chamado.infra.model.Filter;
+import br.com.alexis.chamado.infra.model.SortOrder;
+import br.com.alexis.chamado.model.Car;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -20,12 +21,14 @@ import java.util.stream.Collectors;
 import static com.github.adminfaces.template.util.Assert.has;
 
 /**
- * @author rmpestano
- *         Car Business logic
+ * @author alexisbrabo
+ *         
  */
 @Stateless
 public class CarService implements Serializable {
 
+    private static final long serialVersionUID = -53578025188810019L;
+	
     @Inject
     List<Car> allCars;
 

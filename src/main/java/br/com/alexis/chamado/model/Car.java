@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.adminfaces.starter.model;
+package br.com.alexis.chamado.model;
 
 import java.io.Serializable;
 
@@ -11,7 +11,8 @@ import java.io.Serializable;
  */
 public class Car implements Serializable, Comparable<Car> {
 
-    private Integer id;
+    private static final long serialVersionUID = -1736486279558035174L;
+	private Integer id;
     private String model;
     private String name;
     private Double price;

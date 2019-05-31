@@ -1,7 +1,8 @@
-package com.github.adminfaces.starter.util;
+package br.com.alexis.chamado.util;
 
-import com.github.adminfaces.starter.model.Car;
 import org.omnifaces.util.Messages;
+
+import br.com.alexis.chamado.model.Car;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;

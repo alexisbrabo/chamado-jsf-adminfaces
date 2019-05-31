@@ -1,16 +1,17 @@
-package com.github.adminfaces.starter.infra.security;
+package br.com.alexis.chamado.infra.security;
 
-import com.github.adminfaces.template.session.AdminSession;
-import org.omnifaces.util.Faces;
+import static br.com.alexis.chamado.util.Utils.addDetailMessage;
 
-import javax.enterprise.context.SessionScoped;
-import javax.enterprise.inject.Specializes;
-import javax.faces.context.FacesContext;
-import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
 
-import static com.github.adminfaces.starter.util.Utils.addDetailMessage;
+import javax.enterprise.context.SessionScoped;
+import javax.enterprise.inject.Specializes;
+import javax.inject.Named;
+
+import org.omnifaces.util.Faces;
+
+import com.github.adminfaces.template.session.AdminSession;
 
 /**
  * Created by rmpestano on 12/20/14.
@@ -28,7 +29,8 @@ import static com.github.adminfaces.starter.util.Utils.addDetailMessage;
 @Specializes
 public class LogonMB extends AdminSession implements Serializable {
 
-    private String currentUser;
+    private static final long serialVersionUID = -8147939575395105312L;
+	private String currentUser;
     private String email;
     private String password;
     private boolean remember;
