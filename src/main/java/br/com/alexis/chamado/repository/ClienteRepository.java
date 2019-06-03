@@ -7,7 +7,7 @@ import org.apache.deltaspike.data.api.Repository;
 
 import br.com.alexis.chamado.model.Cliente;
 
-@Repository
+@Repository(forEntity = Cliente.class)
 public interface ClienteRepository extends EntityRepository<Cliente, Long> {
 
 	Optional<Cliente> findById(Long id);

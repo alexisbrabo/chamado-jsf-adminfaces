@@ -2,6 +2,7 @@ package br.com.alexis.chamado.bean;
 
 import static com.github.adminfaces.template.util.Assert.has;
 
+import java.io.IOException;
 import java.io.Serializable;
 
 import javax.faces.bean.ViewScoped;
@@ -34,13 +35,21 @@ public class CadastroClienteBean implements Serializable {
 			cliente = new Cliente();
 		}
 	}
-	
+
 	public void salvarCliente() {
 		cliente = clienteService.salvarCliente(cliente);
 	}
-	
+
 	public boolean isNew() {
 		return cliente == null || cliente.getId() == null;
+	}
+
+	public void remove() throws IOException {
+
+	}
+
+	public void clear() {
+
 	}
 
 	public Long getId() {
@@ -52,6 +61,9 @@ public class CadastroClienteBean implements Serializable {
 	}
 
 	public Cliente getCliente() {
+		if (cliente == null) {
+			cliente = new Cliente();
+		}
 		return cliente;
 	}
 

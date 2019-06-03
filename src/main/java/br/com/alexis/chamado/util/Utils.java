@@ -13,12 +13,13 @@ import java.util.*;
 import java.util.stream.IntStream;
 
 /**
- * Created by rmpestano on 07/02/17.
+ * Created by alexisbrabo
  */
 @ApplicationScoped
 public class Utils implements Serializable {
 
-    private List<Car> cars;
+    private static final long serialVersionUID = -4162677427340465535L;
+	private List<Car> cars;
 
 
     @PostConstruct
