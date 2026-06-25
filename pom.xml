@@ -151,7 +151,7 @@
 		<dependency>
 			<groupId>org.omnifaces</groupId>
 			<artifactId>omnifaces</artifactId>
-			<version>3.3</version>
+			<version>3.14.16</version>
 		</dependency>
 
 		<dependency>
